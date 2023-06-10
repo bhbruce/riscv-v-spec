@@ -5164,7 +5164,7 @@ as is RV64GCV_Zve64f_Zve32x_Zvl128b.
 The Zvfhmin extension provides minimal support for vectors of IEEE 754-2008
 binary16 values, adding conversions to and from binary32.
 When the Zvfhmin extension is implemented, the `vfwcvt.f.f.v` and
-`vfncvt.f.f.w` instructions become defined when SEW=16.
+`vfncvt.f.f.w` instructions become defined for SEW=16.
 The EEW=16 floating-point operands of these instructions use the binary16
 format.
 
@@ -5178,14 +5178,14 @@ When the Zvfh extension is implemented, all instructions in Sections
 <<sec-vector-float>>, <<sec-vector-float-reduce>>,
 <<sec-vector-float-reduce-widen>>, <<sec-vector-float-move>>,
 <<sec-vfslide1up>>, and <<sec-vfslide1down>>
-become defined when SEW=16.
+become defined for SEW=16.
 The EEW=16 floating-point operands of these instructions use the binary16
 format.
 
 Additionally, conversions between 8-bit integers and binary16 values are
 provided.  The floating-point-to-integer narrowing conversions
 (`vfncvt[.rtz].x[u].f.w`) and integer-to-floating-point
-widening conversions (`vfwcvt.f.x[u].v`) become defined when SEW=8.
+widening conversions (`vfwcvt.f.x[u].v`) become defined for SEW=8.
 
 The Zvfh extension depends on the Zve32f and Zfhmin extensions.
 
